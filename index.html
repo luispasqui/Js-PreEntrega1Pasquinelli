@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculador de Costo Electrónico</title>
+</head>
+<body>
+
+  <h2>Calculador de Costo Electrónico</h2>
+
+  <label for="item">Selecciona un artículo:</label>
+  <select id="item">
+    <option value="laptop">Laptop - $1000</option>
+    <option value="phone">Teléfono - $500</option>
+    <option value="tablet">Tablet - $300</option>
+  </select>
+
+  <label for="quantity">Cantidad:</label>
+  <input type="number" id="quantity" min="1" value="1">
+
+  <button onclick="calcularCosto()">Calcular Costo</button>
+
+  <div id="output"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
